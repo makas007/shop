@@ -23,13 +23,15 @@ function Main() {
   
    return (
     <div>
-      <button onClick={myClick}>clicker</button>
       <ul>
         {data.map((item) => (
           <div className="card-items">
             <div>{item.name}</div>
-            <img src={item.image} alt="" />
+            <div className="wrap-image">
+              <img src={item.image} alt="" />
+            </div>
             <Button name="Click"/>
+            <Button name="Add"/>
           </div>
         ))}
 

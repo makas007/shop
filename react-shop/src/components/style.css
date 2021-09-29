@@ -1,0 +1,15 @@
+.wrap-image {
+  height: 210px;
+}
+
+ul { 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-items {
+  width: 33%;
+  margin: 15px 0px;
+}
