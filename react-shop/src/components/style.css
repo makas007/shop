@@ -1,15 +1,44 @@
 .wrap-image {
-  height: 210px;
+  height: 160px;
 }
 
 ul { 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .card-items {
-  width: 33%;
-  margin: 15px 0px;
+  width: 15%;
+  margin: 20px 6%;
+  border: solid 1px black;
+}
+
+ul.header-list {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  align-content: center;
+  background: #2bcde7;
+}
+
+.header-item {
+  margin: 0px 30px;
+  font-weight: bold;
+}
+
+img.header-img {
+  position: absolute;
+  left: 0;
+  height: 6%;
+  margin: 7px;
+}
+
+.text-price {
+  margin: 5% 0;
+}
+.btns {
+  margin: 7px;
+  display: flex;
 }

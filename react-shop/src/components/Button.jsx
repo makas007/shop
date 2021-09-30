@@ -10,12 +10,13 @@ color: white;
 border-radius: 3px;
 font-size: 15px;
 text-transform: uppercase;
+cursor: pointer;
 `;
 
 function Button(props) {
    return (
     <>
-      <Btn className="my-btn"><span>{props.name}</span></Btn>
+      <Btn className="my-btn" onClick={props.knock}><span>{props.name}</span></Btn>
     </>
   )
 }

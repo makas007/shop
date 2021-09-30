@@ -2,9 +2,13 @@ import React, {useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import {fetchData} from '../store/allData.js'
 import Button from './Button.jsx';
+import Header from './Header.jsx';
 
 
-
+const siteData = {
+  headerItems: ['Main', 'Categories', 'Products', 'Cart'],
+  
+}
 
 function Main() {
   const data = useSelector(state => state.allData.names)
@@ -19,10 +23,18 @@ function Main() {
 
   function myClick() {
     console.log(data);
+    alert('Look in the console. There is data')
+  }
+
+  function setCartData(e) {
+    console.log('set_data');
+    console.log(e, 'TARGET');
+
   }
   
    return (
     <div>
+      <Header names={siteData}/>
       <ul>
         {data.map((item) => (
           <div className="card-items">
@@ -30,8 +42,11 @@ function Main() {
             <div className="wrap-image">
               <img src={item.image} alt="" />
             </div>
-            <Button name="Click"/>
-            <Button name="Add"/>
+            <div className='text-price'><span>Price: </span>{item.column_3}<span> $$$</span></div>
+            <div className='btns'>
+              <Button name="Click" knock={myClick}/>
+              <Button name="Add" knock={setCartData}/>
+            </div>
           </div>
         ))}
 
