@@ -15,12 +15,14 @@ export const fetchData = createAsyncThunk(
 const allData = createSlice({
   name:'qwe',
   initialState: {
-    names: []
+    names: [],
+    itemsCart: []
   },
   reducers: {
-    getNames(state, action){
-      console.log(action, "action");
-      state.names = action.payload
+    setToCartReducer(state, action){
+      console.log(action.payload, "cart item");
+      state.itemsCart.push(action.payload);
+      console.log(state.itemsCart); 
     }
   },
   extraReducers: {
@@ -33,4 +35,4 @@ const allData = createSlice({
 })
 
 export default allData.reducer;
-export const{ getNames} = allData.actions
+export const{ setToCartReducer } = allData.actions

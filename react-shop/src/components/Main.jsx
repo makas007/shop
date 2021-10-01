@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import {fetchData} from '../store/allData.js'
 import Button from './Button.jsx';
 import Header from './Header.jsx';
+import { setToCartReducer } from '../store/allData.js';
 
 
 const siteData = {
@@ -26,11 +27,7 @@ function Main() {
     alert('Look in the console. There is data')
   }
 
-  function setCartData(e) {
-    console.log('set_data');
-    console.log(e, 'TARGET');
 
-  }
   
    return (
     <div>
@@ -45,7 +42,7 @@ function Main() {
             <div className='text-price'><span>Price: </span>{item.column_3}<span> $$$</span></div>
             <div className='btns'>
               <Button name="Click" knock={myClick}/>
-              <Button name="Add" knock={setCartData}/>
+              <Button name="Add" knock={() => dispatch(setToCartReducer(item)) }/>
             </div>
           </div>
         ))}
