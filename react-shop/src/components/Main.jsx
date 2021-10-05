@@ -4,6 +4,9 @@ import {fetchData} from '../store/allData.js'
 import Button from './Button.jsx';
 import Header from './Header.jsx';
 import { setToCartReducer } from '../store/allData.js';
+import {Route, Link, Switch, BrowserRouter as Router,} from "react-router-dom";
+import Cart from './Cart';
+
 
 
 const siteData = {
@@ -30,8 +33,8 @@ function Main() {
 
   
    return (
+
     <div>
-      <Header names={siteData}/>
       <ul>
         {data.map((item) => (
           <div className="card-items">
@@ -46,7 +49,6 @@ function Main() {
             </div>
           </div>
         ))}
-
       </ul>
     </div>
   )

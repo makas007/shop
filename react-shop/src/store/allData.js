@@ -23,6 +23,11 @@ const allData = createSlice({
       console.log(action.payload, "cart item");
       state.itemsCart.push(action.payload);
       console.log(state.itemsCart); 
+    },
+    delItemCart(state, action) {
+      console.log('del func');
+      state.itemsCart.splice(action, 1)
+      console.log(this.itemsCart);
     }
   },
   extraReducers: {
@@ -35,4 +40,4 @@ const allData = createSlice({
 })
 
 export default allData.reducer;
-export const{ setToCartReducer } = allData.actions
+export const{ setToCartReducer, delItemCart } = allData.actions

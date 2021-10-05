@@ -1,32 +1,21 @@
 import React from 'react'
-import {Route, Link, BrowserRouter as Router,} from "react-router-dom";
+import {Route, Link, Switch, NavLink, BrowserRouter as Router,} from "react-router-dom";
 import Cart from './Cart';
+import Main from './Main';
 
 
 
 function Header(props) {
-  console.log(props);
+  console.log(props, '1111');
    return (
-     <Router>
       <div className="header">
-        <img className="header-img" src="./logo-shop.jpg" alt="" />
-        <ul className="header-list">
-          {/* {props.names.headerItems.map( item => <a className='header-item' href={item}>{item}</a>)} */}
-          <li>
-            <Link to="/">Main</Link>
-          </li>
-          {/* <li>
-            <Link to="/categories">Categories</Link>
-          </li>
-          <li>
-            <Link to="/product">Products</Link>
-          </li> */}
-          <li>
-            <Link to={Cart}>Cart</Link>
-          </li>
-        </ul>
+        {/* <img className="header-img" src="./logo-shop.jpg" alt="" /> */}
+          <nav>
+            <Link to='/'>Main</Link>
+            <Link to='/cart'>Cart</Link>
+         </nav>
       </div>
-     </Router>
+
 
   )
 }
