@@ -13,9 +13,12 @@ ul {
   width: 15%;
   margin: 20px 6%;
   border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-ul.header-list {
+.header {
   display: flex;
   height: 60px;
   justify-content: center;
@@ -23,9 +26,13 @@ ul.header-list {
   background: #2bcde7;
 }
 
-.header-item {
+.header a {
   margin: 0px 30px;
   font-weight: bold;
+}
+.header nav {
+  align-items: center;
+  display: flex;
 }
 
 img.header-img {

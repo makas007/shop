@@ -1,4 +1,4 @@
-import {Route, Link, Switch, NavLink, BrowserRouter as Router,} from "react-router-dom";
+import {Route, Switch, BrowserRouter as Router,} from "react-router-dom";
 import './App.css';
 import Main from './components/Main';
 import Cart from './components/Cart';

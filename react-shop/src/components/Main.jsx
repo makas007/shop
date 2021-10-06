@@ -2,17 +2,8 @@ import React, {useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import {fetchData} from '../store/allData.js'
 import Button from './Button.jsx';
-import Header from './Header.jsx';
 import { setToCartReducer } from '../store/allData.js';
-import {Route, Link, Switch, BrowserRouter as Router,} from "react-router-dom";
-import Cart from './Cart';
 
-
-
-const siteData = {
-  headerItems: ['Main', 'Categories', 'Products', 'Cart'],
-  
-}
 
 function Main() {
   const data = useSelector(state => state.allData.names)
@@ -20,8 +11,6 @@ function Main() {
   
 
   useEffect(() => {
-    console.log('USEEFFECT');
-    console.log(dispatch);
     dispatch(fetchData())
   },[dispatch])
 
@@ -37,7 +26,7 @@ function Main() {
     <div>
       <ul>
         {data.map((item) => (
-          <div className="card-items">
+          <div className="card-items" key={item.id}>
             <div>{item.name}</div>
             <div className="wrap-image">
               <img src={item.image} alt="" />

@@ -6,7 +6,6 @@ export const fetchData = createAsyncThunk(
   async function() {
     return await axios.get('https://retoolapi.dev/z4s4bl/data')
       .then((response) => {
-        console.log(response.data, 'AXIOS')
         return response.data
       })
   }
@@ -20,20 +19,16 @@ const allData = createSlice({
   },
   reducers: {
     setToCartReducer(state, action){
-      console.log(action.payload, "cart item");
       state.itemsCart.push(action.payload);
-      console.log(state.itemsCart); 
+      console.log(state.itemsCart);
     },
     delItemCart(state, action) {
-      console.log('del func');
-      state.itemsCart.splice(action, 1)
-      console.log(this.itemsCart);
+      state.itemsCart.splice( action.payload, 1)
     }
   },
   extraReducers: {
     [fetchData.fulfilled]: (state, action) => {
       console.log('resolved');
-      console.log(state);
       state.names = action.payload
     }
   }

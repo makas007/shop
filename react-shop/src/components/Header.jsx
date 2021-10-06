@@ -1,7 +1,6 @@
 import React from 'react'
-import {Route, Link, Switch, NavLink, BrowserRouter as Router,} from "react-router-dom";
-import Cart from './Cart';
-import Main from './Main';
+import { Link} from "react-router-dom";
+
 
 
 
