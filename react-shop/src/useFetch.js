@@ -6,12 +6,16 @@ import {useEffect, useState} from "react";
 
   useEffect(() => {
     fetch(url).then((response) => {
+      console.log('then1');
       return response.json()
     })
     .then((data) => {
+      console.log('then2');
       setFetchData(data)
     })
   },[url])
   return fetchData
 }
+
+
 
