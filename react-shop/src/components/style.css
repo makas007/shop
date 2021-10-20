@@ -65,3 +65,19 @@ svg.header-logo {
 .header-down-categories > a {
   margin-right: 12vmin;
 }
+
+.container img {
+  margin: auto;
+  /* width: 120vmin; */
+  width: 54%;
+  margin-top: 15px;
+}
+
+p.slider-text {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+}
