@@ -44,13 +44,12 @@ function Header(props) {
         </div>
         <div className="header-down">
           <div className="header-down-categories">
-            <a href="#">Fashion</a>
-            <a href="#">Accessories</a>
-            <a href="#">Bags</a>
-            <a href="#">Shoes</a>
-            <a href="#">Beauty</a>
-            <a href="#">Home</a>
-            <a href="#">Art</a>
+            <Link to ='Fashion'>Fashion</Link>
+            <Link to='/'>Accessories</Link>
+            <Link to='/'>Bags</Link>
+            <Link to='/'>Shoes</Link>
+            <Link to='/'>Home</Link>
+            <Link to='/'>Art</Link>
           </div>
         </div>
       </div>
