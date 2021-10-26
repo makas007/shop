@@ -1,5 +1,5 @@
 .header{
-  position: relative;
+  /* position: relative; */
 }
 svg.header-logo {
   margin: auto;
@@ -9,8 +9,7 @@ svg.header-logo {
   align-items: center;
   background-color: #F5F1F5;
   height: 6vmin;
-  max-width: 1280px;
-  margin: auto;
+  justify-content: center;
 }
 .header-up-lang {
   display: flex;
@@ -18,7 +17,6 @@ svg.header-logo {
 }
 .header-up-lang * {
   display: flex;
-  margin-right: auto;
 }
 .header-up-lang > svg {
   padding: 0 10px;
@@ -30,18 +28,25 @@ svg.header-logo {
 }
 
 .header-up-social * {
-  margin-left: 3vh;
+  margin-left: 30px;
+}
+.container {
+  max-width: 1280px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .header-up-social {
-  margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 .header-middle {
-  max-width: 1280px;
-  width: 100%;
-  margin: auto;
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  align-content: center;
 }
 .header-middle-right {
   margin-left: auto;
@@ -59,7 +64,7 @@ svg.header-logo {
 
 
 .header-down {
-  max-width: 1480px;
+  max-width: 1280px;
   margin: auto;
   height: 4vmin;
   border-bottom: 2px solid #F5F1F5;
@@ -77,10 +82,9 @@ svg.header-logo {
 }
 
 .container img {
-  margin: auto;
-  /* width: 120vmin; */
-  width: 54%;
-  margin-top: 15px;
+  margin: 15px 0;
+  width: 100%;
+
 }
 
 p.slider-text {
@@ -90,4 +94,33 @@ p.slider-text {
   text-align: center;
   margin: auto;
   margin-top: 30px;
+}
+
+.block-img {
+  width: 50%;
+}
+img {
+  width: 100%;
+}
+.carousel-container {
+  width: 60%;
+  margin: auto;
+}
+
+.carousel-wrap {
+  margin-top: 10px;
+  background: #F5F1F5;
+}
+
+.block-1-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block-text {
+  width: 50%;
+}
+.block-text > p {
+  width: 80%;
+  margin: auto;
 }

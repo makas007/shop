@@ -4,17 +4,14 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 
 
-export default class MultipleRows extends Component {
+export default class MultipleRows2 extends Component {
   render() {
     const settings = {
       dots: true,
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 2000,
-      pauseOnHover: true
-
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1
     };
     return (
       <div className="carousel-container">

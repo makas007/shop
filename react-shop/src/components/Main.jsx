@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchData } from '../store/allData.js';
 import Carousel from './Carousel.jsx';
+import Carousel2 from './Carousel2.jsx';
 
 
 function Main() {
@@ -22,7 +23,25 @@ function Main() {
   
    return (
     <div>
-      <Carousel/>
+      <div className="carousel-wrap">
+        <Carousel/>
+      </div>
+      <div className="block-1-wrapper">
+        <div className="container">
+          <div className="block-img">
+            < img src="/images/block-image-1.png" alt="" />
+          </div>
+          <div className="block-text">
+            <p>
+              Like in a Dream is born from a dream: the possibility of finding unique, quality, handmade products, creations with a fascinating history, a dazzling personal style.
+              After many years of searching for creators, we decided to create a platform to make them visible, support and promote crafts and artistic creation as a whole and share their experiences with you.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="carousel-wrap">
+        <Carousel2/>
+      </div>
     </div>
   )
 }
