@@ -94,6 +94,7 @@ p.slider-text {
   text-align: center;
   margin: auto;
   margin-top: 30px;
+  padding-bottom: 20px;
 }
 
 .block-img {
@@ -103,13 +104,14 @@ img {
   width: 100%;
 }
 .carousel-container {
-  width: 60%;
+  max-width: 1280px;
   margin: auto;
 }
 
 .carousel-wrap {
   margin-top: 10px;
   background: #F5F1F5;
+  margin-bottom: 45px;
 }
 
 .block-1-wrapper {
@@ -123,4 +125,80 @@ img {
 .block-text > p {
   width: 80%;
   margin: auto;
+}
+
+button.slick-arrow.slick-prev {
+  left: 15px;
+  z-index: 1;
+}
+
+button.slick-arrow.slick-next {
+  right: 85px;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background: black;
+  font-size: 13px;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  height: 60px;
+}
+.footer-names {
+  color: white;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-icons {
+  display: flex;
+  margin-top: 15px;
+  height: 60px;
+}
+.footer-icons :last-child {
+  margin-left: 20px;
+}
+.footer-icons > svg {
+  cursor: pointer;
+}
+
+.footer-links {
+  color: white;
+  text-decoration: auto;
+}
+.header-links {
+  color: black;
+  text-decoration: auto;
+}
+
+.carousel-container > p {
+  padding-top: 15px;
+  font-weight: 600;
+}
+.slide-price {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+}
+
+img.img-carousel2 {
+  width: 80%;
+}
+
+.slick-prev, .slick-next {
+  top: 32%;
+}
+.content-slider {
+  padding: 0 15px;
+  width: 80%;
 }

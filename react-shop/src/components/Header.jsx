@@ -33,9 +33,9 @@ function Header(props) {
           <div className="header-middle">
             <div className="container">
               <div className="header-middle-left">
-                <a href="#">Men</a>
-                <a href="#">Women</a>
-                <a href="#">Kids</a>
+                <Link to='/' className="header-links">Men</Link>
+                <Link to='/' className="header-links">Woman</Link>
+                <Link to='/' className="header-links">Kids</Link>
               </div>
                 <LogoSVG className='header-logo'/>
               <div className="header-middle-right">
@@ -49,12 +49,12 @@ function Header(props) {
           </div>
           <div className="header-down">
             <div className="container">
-              <Link to ='Fashion'>Fashion</Link>
-              <Link to='/'>Accessories</Link>
-              <Link to='/'>Bags</Link>
-              <Link to='/'>Shoes</Link>
-              <Link to='/'>Home</Link>
-              <Link to='/'>Art</Link>
+              <Link to ='Fashion' className="header-links">Fashion</Link>
+              <Link to='/' className="header-links">Accessories</Link>
+              <Link to='/' className="header-links">Bags</Link>
+              <Link to='/' className="header-links">Shoes</Link>
+              <Link to='/' className="header-links">Home</Link>
+              <Link to='/' className="header-links">Art</Link>
             </div>
           </div>          
       </div>
