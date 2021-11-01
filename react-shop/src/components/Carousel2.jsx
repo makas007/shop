@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import {ReactComponent as BagSVG} from '../icons/bag.svg'
+import "./style.css"
 
 
 
@@ -10,7 +11,7 @@ export default class MultipleRows extends Component {
   render() {
     const settings = {
       dots: true,
-      autoplay: true,
+      autoplay: false,
       infinite: true,
       slidesToShow: 4,
       slidesToScroll: 1

@@ -40,12 +40,7 @@ function Main() {
           </div>
         </div>
       </div>
-      <div className="carousel-wrap">
-        <Carousel2/>
-      </div>
-      <div className="footer-wrap">
-        <Footer/>
-      </div>
+      <Carousel2/>
     </div>
   )
 }

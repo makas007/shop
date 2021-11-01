@@ -1,21 +1,24 @@
-import {Route, Switch, BrowserRouter as Router,} from "react-router-dom";
+import {Route, Switch, BrowserRouter as Router} from "react-router-dom";
 import './App.css';
 import Main from './components/Main';
-import Cart from './components/Cart';
 import Header from './components/Header';
+import Categories from "./components/Categories";
+import Footer from "./components/Footer";
+import Carousel2 from "./components/Carousel2"
 
 function App() {
   return (
-
-      <Router className='App'>
-        <Header/>
-        <Switch>
-          <Route exact path='/' component={Main}/>
-          <Route path='/cart' component={Cart}/>
-        </Switch>
-      </Router>
-
-    
+    <Router className='App'>
+     <Header/>
+    <Switch>
+        <Route exact path='/qwe' component={Categories}/>
+        <Route path='/:id' component={Categories}/>
+        <Route path='/' component={Main}/>
+    </Switch>
+      <div className="footer-wrap">
+        <Footer/>
+      </div>
+    </Router>
   );
 }
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link} from "react-router-dom";
+import './style.css'
 import {ReactComponent as UserSVG} from '../icons/user.svg'
 import {ReactComponent as SearchSVG} from '../icons/search.svg'
 import {ReactComponent as BagSVG} from '../icons/bag.svg'
@@ -33,7 +34,7 @@ function Header(props) {
           <div className="header-middle">
             <div className="container">
               <div className="header-middle-left">
-                <Link to='/' className="header-links">Men</Link>
+                <Link to='/men' className="header-links">Men</Link>
                 <Link to='/' className="header-links">Woman</Link>
                 <Link to='/' className="header-links">Kids</Link>
               </div>

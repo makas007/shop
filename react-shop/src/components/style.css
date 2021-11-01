@@ -133,7 +133,7 @@ button.slick-arrow.slick-prev {
 }
 
 button.slick-arrow.slick-next {
-  right: 85px;
+  right: 15px;
 }
 
 .footer-wrap {
@@ -187,18 +187,23 @@ button.slick-arrow.slick-next {
   display: flex;
   align-content: center;
   justify-content: space-between;
-  width: 80%;
   align-items: center;
 }
 
-img.img-carousel2 {
-  width: 80%;
-}
 
 .slick-prev, .slick-next {
-  top: 32%;
+  top: 50%;
 }
 .content-slider {
   padding: 0 15px;
-  width: 80%;
+}
+
+.slide-price > svg {
+  cursor: pointer;
+}
+.slick-slide > div {
+  padding: 0 10px;
+}
+.slick-dots {
+  position: unset;
 }
