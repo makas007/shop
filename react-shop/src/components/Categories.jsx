@@ -1,8 +1,9 @@
 import React, { useState } from "react";
+import Filters from "./Filters";
 
 
 function Categories() {
-  const [category, setCategory] = useState([
+  const [category] = useState([
     'fashion',
     'jewellry',
     'accessories',
@@ -13,14 +14,17 @@ function Categories() {
     'art'
   ])
    return (
-    <div className="categories">
-      <div className="wrap-container">
-        {category.map((item) => (
-          <div className="category-name">{item}</div>
-        ))} 
+    <div className="container2">
+      <div className="categories">
+        <div className="wrap-container">
+          {category.map((item) => (
+            <div className="category-name">{item}</div>
+          ))} 
+        </div>
+        <Filters/>
       </div>
-
     </div>
+
   )
 }
 export default Categories;

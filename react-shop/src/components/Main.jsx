@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchData } from '../store/allData.js';
 import Carousel from './Carousel.jsx';
 import Carousel2 from './Carousel2.jsx';
-import Footer from './Footer.jsx';
 
 
 function Main() {
@@ -40,7 +39,9 @@ function Main() {
           </div>
         </div>
       </div>
-      <Carousel2/>
+      <div className="carousel-wrap">    
+        <Carousel2/>
+      </div>
     </div>
   )
 }
