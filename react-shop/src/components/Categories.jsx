@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Filters from "./Filters";
+import CardList from './CardList.jsx';
 
 
 function Categories() {
@@ -22,6 +23,7 @@ function Categories() {
           ))} 
         </div>
         <Filters/>
+        <CardList/>
       </div>
     </div>
 

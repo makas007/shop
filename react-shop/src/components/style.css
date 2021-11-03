@@ -211,6 +211,7 @@ button.slick-arrow.slick-next {
   width: 150px;
   text-transform: uppercase;
   margin: 10px 0;
+  cursor: pointer;
 }
 
 .categories {

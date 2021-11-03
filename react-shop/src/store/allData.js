@@ -4,7 +4,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 export const fetchData = createAsyncThunk(
   'zxczxc',
   async function() {
-    return await axios.get('https://retoolapi.dev/z4s4bl/data')
+    return await axios.get('https://retoolapi.dev/tB2izy/data')
       .then((response) => {
         return response.data
       })

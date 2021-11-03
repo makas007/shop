@@ -5,6 +5,7 @@ import Carousel from './Carousel.jsx';
 import Carousel2 from './Carousel2.jsx';
 
 
+
 function Main() {
   const data = useSelector(state => state.allData.names)
   const dispatch = useDispatch();
