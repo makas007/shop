@@ -14,7 +14,6 @@ function Filters() {
     'Price',
     'Sales',
     'Show all filters',
-    'Clear filter'
   ])
    return (
     <div className="filters-wrapper">

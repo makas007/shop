@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useDispatch } from "react-redux";
 import Filters from "./Filters";
 import CardList from './CardList.jsx';
-
+import { shopDada } from "../store/shopData";
 
 function Categories() {
+  const dispatch = useDispatch()
   const [category] = useState([
     'fashion',
     'jewellry',
@@ -14,6 +16,11 @@ function Categories() {
     'home',
     'art'
   ])
+
+  useEffect(() => {
+    dispatch(shopDada())
+  })
+
    return (
     <div className="container2">
       <div className="categories">
@@ -22,8 +29,11 @@ function Categories() {
             <div className="category-name">{item}</div>
           ))} 
         </div>
-        <Filters/>
-        <CardList/>
+        <div className="wrap-for-category">
+          <Filters/>
+          <CardList/>
+        </div>
+        
       </div>
     </div>
 

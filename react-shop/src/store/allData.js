@@ -28,7 +28,7 @@ const allData = createSlice({
   },
   extraReducers: {
     [fetchData.fulfilled]: (state, action) => {
-      console.log('resolved');
+      console.log('resolved111');
       state.names = action.payload
     }
   }

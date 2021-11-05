@@ -143,6 +143,7 @@ button.slick-arrow.slick-next {
   height: 200px;
   background: black;
   font-size: 13px;
+  margin-top: 15px;
 }
 
 .footer-text {
@@ -252,4 +253,33 @@ div#root {
   height: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.card-list {
+  display: grid;
+  justify-items: stretch;
+  grid-template-columns: repeat(auto-fill, minmax(163px, 21%));
+  grid-row-gap: 20px;
+  grid-column-gap: 5%;
+}
+
+.wrap-for-category {
+  width: 100%;
+}
+
+.card-img {
+  height: 250px;
+}
+
+.card-info {
+  height: 60px;
+}
+
+.wrap-price > svg {
+  cursor: pointer;
+}
+.wrap-price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
 }
