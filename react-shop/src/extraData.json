@@ -1,0 +1,91 @@
+[
+  {
+    "id": 1,
+    "value": "fashion",
+    "categories": 
+      {
+        "fashion1": "test1",
+        "fashion2": "test2",
+        "fashion3": "test3",
+        "fashion4": "test4"
+      }
+  },
+  {
+    "id": 2,
+    "value": "jewellry",
+    "categories":
+      {
+        "jewellry1": "test1",
+        "jewellry2": "test2",
+        "jewellry3": "test3",
+        "jewellry4": "test4"
+      }
+    
+  },
+  {
+    "id": 3,
+    "value": "accessories",
+    "categories":
+      {
+        "accessories1": "test1",
+        "accessories2": "test2",
+        "accessories3": "test3",
+        "accessories4": "test4"
+      }
+  },
+  {
+    "id": 4,
+    "value": "bags",
+    "categories": 
+      {
+        "bags1": "test1",
+        "bags2": "test2",
+        "bags3": "test3",
+        "bags4": "test4"
+      }
+  },
+  {
+    "id": 5,
+    "value": "shoes",
+    "categories":
+      {
+        "shoes1": "test1",
+        "shoes2": "test2",
+        "shoes3": "test3",
+        "shoes4": "test4"
+      }
+  },
+  {
+    "id": 6,
+    "value": "beauty",
+    "categories":
+      {
+        "beauty1": "test1",
+        "beauty2": "test2",
+        "beauty3": "test3",
+        "beauty4": "test4"
+      }
+  },
+  {
+    "id": 7,
+    "value": "home",
+    "categories":
+      {
+        "home1": "test1",
+        "home2": "test2",
+        "home3": "test3",
+        "home4": "test4"
+      }
+  },
+  {
+    "id": 8,
+    "value": "art",
+    "categories":
+      {
+        "art1": "test1",
+        "art2": "test2",
+        "art3": "test3",
+        "art4": "test4"
+      }
+  }
+]

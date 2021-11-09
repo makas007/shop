@@ -270,9 +270,20 @@ div#root {
 .card-img {
   height: 250px;
 }
+.card {
+  border: 1px solid black;
+  box-shadow: 0px 0px 15px 1px #c1b0c1;
+  border-radius: 5%;
+}
 
+.card-img img {
+  border-radius: 5%;
+}
 .card-info {
   height: 60px;
+  height: 60px;
+  padding: 0px 15px;
+  margin-bottom: 10px;
 }
 
 .wrap-price > svg {

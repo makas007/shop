@@ -6,7 +6,7 @@ export const shopDada = createAsyncThunk(
   async function() {
     return await axios.get('https://retoolapi.dev/tB2izy/data')
       .then((response) => {
-        console.log(response.data, 'shop-data')
+        // console.log(response.data, 'shop-data')
         return response.data
       })
   }
@@ -19,8 +19,8 @@ const sliceShop = createSlice({
   },
   extraReducers: {
     [shopDada.fulfilled]: (state, action) => {
-      console.log('shopData fulfilled');
-      console.log(state.cardInfo, 'state-cardInfo');
+      // console.log('shopData fulfilled');
+      // console.log(state.cardInfo, 'state-cardInfo');
       state.cardInfo = action.payload
     }
   }

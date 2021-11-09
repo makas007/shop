@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import Card from "./Card";
 import { useSelector } from "react-redux"
 
-function CardList(props) {
+function CardList() {
   // const [allData, setAllData] = useState(null)
   const allDataShop = useSelector(state => state.sliceShop.cardInfo)
 
@@ -20,7 +19,7 @@ function CardList(props) {
   // useEffect(()=> {
   //   getAllData()
   // },[])
-    console.log(allDataShop, 'alldata card list')
+    // console.log(allDataShop, 'alldata card list')
    return (
     
     <div className="card-list">

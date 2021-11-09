@@ -13,7 +13,6 @@ function Filters() {
     'Style',
     'Price',
     'Sales',
-    'Show all filters',
   ])
    return (
     <div className="filters-wrapper">
@@ -23,6 +22,7 @@ function Filters() {
             <option value={name} selected>{name}</option>
           </select>
         ))}
+        <button>Show all filters</button>
       </div>
     </div>
   )

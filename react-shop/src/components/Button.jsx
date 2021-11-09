@@ -5,11 +5,10 @@ import './style.css'
 const Btn = styled.button`
 width: 120px;
 height: 30px;
-background: rgba(2, 128, 255, 0.778);
-color: white;
-border-radius: 3px;
+background: rgba(162, 209, 255, 0.778);
+color: black;
+border-radius: 5px;
 font-size: 15px;
-text-transform: uppercase;
 cursor: pointer;
 `;
 
