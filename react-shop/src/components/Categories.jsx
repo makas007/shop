@@ -5,8 +5,10 @@ import CardList from './CardList.jsx';
 import { shopDada } from "../store/shopData";
 import extraData from '../extraData.json'
 import Button from './Button.jsx';
+import { useSelector } from "react-redux"
 
 function Categories() {
+  const allDataShop = useSelector(state => state.sliceShop.cardInfo)
   const dispatch = useDispatch()
   const [category] = useState([
     'fashion',
@@ -18,13 +20,13 @@ function Categories() {
     'home',
     'art'
   ])
-  const arr = extraData.map((item) => {
-    console.log(item.categories);
-  })
-
+  // extraData.map((item) => {
+  //   console.log(item.categories);
+  // })
+  
   useEffect(() => {
     dispatch(shopDada())
-  })
+  },[dispatch])
 
   function handlerDropdown(e) {
     console.log(e.target);
@@ -38,11 +40,10 @@ function Categories() {
           {category.map((item) => (
             <div className="category-name" onClick={handlerDropdown}>{item}</div>
           ))} 
-          <Button name="button"/>
         </div>
         <div className="wrap-for-category">
           <Filters/>
-          <CardList/>
+          <CardList data={allDataShop}/>
         </div>
         
       </div>

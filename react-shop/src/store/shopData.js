@@ -5,17 +5,24 @@ export const shopDada = createAsyncThunk(
   'allShopData',
   async function() {
     return await axios.get('https://retoolapi.dev/tB2izy/data')
-      .then((response) => {
-        // console.log(response.data, 'shop-data')
-        return response.data
-      })
+      .then((response) => response.data)
   }
 )
 
 const sliceShop = createSlice({
   name: 'slice-shop',
   initialState: {
-    cardInfo: []
+    cardInfo: [],
+    itemsCart: []
+  },
+  reducers: {
+    setItemToCart(state, action){
+      state.itemsCart.push(action.payload);
+      console.log(state.itemsCart);
+    },
+    delItemCart(state, action) {
+      state.itemsCart.splice( action.payload, 1)
+    }
   },
   extraReducers: {
     [shopDada.fulfilled]: (state, action) => {
@@ -27,3 +34,4 @@ const sliceShop = createSlice({
 })
 
 export default sliceShop.reducer;
+export const {setItemToCart, delItemCart} = sliceShop.actions

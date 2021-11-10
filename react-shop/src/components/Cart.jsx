@@ -3,27 +3,20 @@ import {useSelector} from 'react-redux'
 import Button from './Button.jsx';
 import { delItemCart } from '../store/allData.js';
 import { useDispatch } from "react-redux";
+import CardList from "./CardList.jsx";
+import Card from "./Card.jsx";
 
 
 function Cart() {
-  const itemsCart = useSelector(state => state.allData.itemsCart)
+  const itemsCart = useSelector(state => state.sliceShop.itemsCart)
   const dispatch = useDispatch()
   console.log(itemsCart, 'itemCart');
 
-
-
    return (
-    <div>
-      <h1>Items</h1>
-      {itemsCart.map(((item, index) => (
-        <div className="cart-items" key={item.id}>
-          <div>{item.name}</div>
-            <div className="wrap-image">
-              <img src={item.image} alt="" />
-              <Button name="Del" knock={() => dispatch(delItemCart(index)) }/>
-            </div>
-        </div>
-      )))}
+    <div className="card-list">
+      {itemsCart.map((item) => (
+        <Card card={item}/>
+      ))}
     </div>
   )
 }

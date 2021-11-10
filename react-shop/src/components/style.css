@@ -294,3 +294,7 @@ div#root {
   justify-content: space-between;
   margin-top: 15px;
 }
+
+.header-middle-right > a {
+  margin-left: 30px;
+}

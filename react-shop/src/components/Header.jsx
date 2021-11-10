@@ -43,7 +43,7 @@ function Header(props) {
                 <SearchSVG/>
                 <UserSVG/>
                 <HeartSVG/>
-                <BagSVG/>
+                <Link to='/cart'><BagSVG/></Link>
               </div>
             </div>
             
