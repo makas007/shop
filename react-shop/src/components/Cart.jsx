@@ -5,6 +5,7 @@ import { delItemCart } from '../store/allData.js';
 import { useDispatch } from "react-redux";
 import CardList from "./CardList.jsx";
 import Card from "./Card.jsx";
+import Test from './Test'
 
 
 function Cart() {
@@ -17,6 +18,7 @@ function Cart() {
       {itemsCart.map((item) => (
         <Card card={item}/>
       ))}
+      <Test/>
     </div>
   )
 }
